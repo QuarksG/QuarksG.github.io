@@ -1,4 +1,4 @@
-// script.js - Portfolio JavaScript
+// app.js - Portfolio JavaScript
 // Author: Toghrul Niyazli
 // Description: Interactive functionality for portfolio website
 
