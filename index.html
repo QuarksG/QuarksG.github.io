@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toghrul Niyazli - Data Analytics Expert | Transforming complex data into actionable insights at scale">
+    <meta name="keywords" content="Toghrul Niyazli, Data Analytics, Business Intelligence, Amazon, SAP, Python, SQL, Agile, SCRUM">
+    <meta name="author" content="Toghrul Niyazli">
+    <meta property="og:title" content="Toghrul Niyazli - Data Analytics Expert">
+    <meta property="og:description" content="Experienced Data Analytics Expert with proven track record at Amazon, specializing in finance operations and cross-functional collaboration">
+    <meta property="og:type" content="website">
+    <title>Toghrul Niyazli | Data Analytics Expert</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    <div class="gradient-overlay"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <rect x="5" y="5" width="10" height="10" fill="#0066ff" />
+                        <rect x="15" y="15" width="10" height="10" fill="#00d4ff" />
+                        <rect x="25" y="25" width="10" height="10" fill="#ff6b35" />
+                    </svg>
+                </div>
+                <span class="logo-text">TN</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" data-nav="home">Home</a></li>
+                <li><a href="#about" data-nav="about">About</a></li>
+                <li><a href="#projects" data-nav="projects">Projects</a></li>
+                <li><a href="#skills" data-nav="skills">Skills</a></li>
+                <li><a href="#experience" data-nav="experience">Experience</a></li>
+                <li><a href="#contact" data-nav="contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Available for New Opportunities</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Toghrul Niyazli</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span class="typing-text" data-text="Data Analytics Expert"></span>
+                </div>
+                
+                <p class="hero-description">
+                    Transforming complex data into actionable insights. Specialized in finance operations, 
+                    advanced analytics, and cross-functional collaboration with proven impact at 
+                    <span class="highlight">Amazon</span> and enterprise solutions.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="95">0</div>
+                        <div class="stat-label">% Accuracy Achieved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="900">0</div>
+                        <div class="stat-label">Hours Saved Annually</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$1M+</div>
+                        <div class="stat-label">Revenue Generated</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Projects</span>
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="window-title">data_analytics.py</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+<span class="keyword">from</span> sklearn <span class="keyword">import</span> analytics
+
+<span class="keyword">class</span> <span class="class">DataExpert</span>:
+    <span class="keyword">def</span> <span class="function">transform_insights</span>(self, data):
+        <span class="comment"># Achieving 95% accuracy</span>
+        processed = self.validate_invoices(data)
+        insights = self.analyze_patterns(processed)
+        <span class="keyword">return</span> self.generate_impact(insights)
+        
+    <span class="keyword">def</span> <span class="function">drive_innovation</span>(self):
+        <span class="string">"Building the future of data"</span>
+        <span class="keyword">return</span> {
+            <span class="string">'efficiency'</span>: <span class="string">'900+ hours saved'</span>,
+            <span class="string">'revenue'</span>: <span class="string">'$1M+ generated'</span>,
+            <span class="string">'accuracy'</span>: <span class="number">95</span>
+        }</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Bridging Technology and Business Impact</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm a data analytics expert with extensive experience in finance operations and 
+                        cross-functional collaboration at <strong>Amazon</strong>. My passion lies in 
+                        translating complex technical concepts into tangible business value.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Data-Driven Decision Making</h4>
+                                <p>Leveraging advanced analytics to drive strategic initiatives across multiple regions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Technical Innovation</h4>
+                                <p>Building custom tools and automation solutions that eliminate dependencies</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Cross-Functional Leadership</h4>
+                                <p>Successfully leading agile teams across technical and business domains</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:toghrulniyazli1@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            toghrulniyazli1@gmail.com
+                        </a>
+                        <a href="tel:+420774175008" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            +420 774 175 008
+                        </a>
+                        <a href="#" class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Prague, Czech Republic
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="skill-matrix">
+                        <div class="matrix-header">Core Competencies</div>
+                        <div class="matrix-grid">
+                            <div class="matrix-item" data-level="expert">Data Analysis</div>
+                            <div class="matrix-item" data-level="expert">Python</div>
+                            <div class="matrix-item" data-level="advanced">SQL</div>
+                            <div class="matrix-item" data-level="advanced">Agile/SCRUM</div>
+                            <div class="matrix-item" data-level="expert">Process Automation</div>
+                            <div class="matrix-item" data-level="advanced">API Integration</div>
+                            <div class="matrix-item" data-level="expert">Business Intelligence</div>
+                            <div class="matrix-item" data-level="advanced">Cloud Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Projects</h2>
+                <p class="section-subtitle">Impactful Solutions Delivered at Scale</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Invoice Validation System -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">JSON</span>
+                            <span class="tag">Regex</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">Invoice Validation System</h3>
+                    <p class="project-description">
+                        Built an advanced validation engine that increased accuracy from 56% to 95%, 
+                        significantly reducing manual processing and payment delays across Turkey, Egypt, 
+                        Israel, and Italy.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">39%</span>
+                            <span class="metric-label">Accuracy Increase</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">4</span>
+                            <span class="metric-label">Countries Impacted</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <button class="btn-text">View Details →</button>
+                    </div>
+                </div>
+
+                <!-- XML to PDF Conversion Tool -->
+                <div class="project-card" data-category="development">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Visual Studio</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">XSLT</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">XML to PDF Conversion Tool</h3>
+                    <p class="project-description">
+                        Developed a secure internal tool that decodes base64-encoded XSLT and transforms 
+                        XML to PDF, eliminating third-party dependencies and saving 900 hours annually 
+                        per department.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">900</span>
+                            <span class="metric-label">Hours Saved/Year</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Data Security</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <button class="btn-text">View Details →</button>
+                    </div>
+                </div>
+
+                <!-- Automated Reconciliation Dashboard -->
+                <div class="project-card" data-category="analytics">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Excel VBA</span>
+                            <span class="tag">Oracle NetSuite</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">Automated Reconciliation Dashboard</h3>
+                    <p class="project-description">
+                        Created an Excel macro automating vendor reconciliation, categorizing documents 
+                        using EFT data from Oracle NetSuite, enhancing transparency and streamlining 
+                        dispute resolution.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Automation</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Agile</span>
+                            <span class="metric-label">Methodology</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <button class="btn-text">View Details →</button>
+                    </div>
+                </div>
+
+                <!-- Amazon Business Application -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Amazon Amplify</span>
+                            <span class="tag">SCRUM</span>
+                            <span class="tag">Full-Stack</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">Amazon Business Application</h3>
+                    <p class="project-description">
+                        Led development of an Agile SCRUM-based application using Amazon Amplify for 
+                        frontend and backend, successfully integrated into Amazon's internal platforms 
+                        Gitfarm and Amazon.code.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">Full-Stack</span>
+                            <span class="metric-label">Solution</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Enterprise</span>
+                            <span class="metric-label">Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <button class="btn-text">View Details →</button>
+                    </div>
+                </div>
+
+                <!-- ERP Systems -->
+                <div class="project-card" data-category="enterprise">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">ERP</span>
+                            <span class="tag">Freelance</span>
+                            <span class="tag">Business Solutions</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">Custom ERP Systems</h3>
+                    <p class="project-description">
+                        Developed custom ERP solutions for 5+ small businesses as a freelance developer, 
+                        generating approximately $1 million annually for clients through optimized 
+                        business processes.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">$1M+</span>
+                            <span class="metric-label">Annual Revenue</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">5+</span>
+                            <span class="metric-label">Businesses</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <button class="btn-text">View Details →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies & Tools I Work With</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming & Analytics
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-proficiency="95">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-proficiency="90">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-proficiency="85">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-proficiency="88">
+                            <div class="skill-info">
+                                <span class="skill-name">VBA/Excel</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-proficiency="92">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS/Amazon Amplify</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-proficiency="88">
+                            <div class="skill-info">
+                                <span class="skill-name">Oracle NetSuite</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-proficiency="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Visual Studio</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-proficiency="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/Version Control</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Methodologies -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-project-diagram"></i>
+                        Methodologies & Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agile/SCRUM</span>
+                        <span class="skill-tag">UML/BPMN</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">WebSocket</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Business Intelligence</span>
+                        <span class="skill-tag">Process Automation</span>
+                        <span class="skill-tag">Cross-functional Leadership</span>
+                        <span class="skill-tag">Project Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Professional Journey</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analytics Expert</h3>
+                            <span class="timeline-company">Amazon</span>
+                            <span class="timeline-date">Current</span>
+                        </div>
+                        <p class="timeline-description">
+                            Leading cross-regional technical and business analysis projects. Driving impact 
+                            through discovery and translating technical concepts into product requirements.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Increased invoice validation accuracy from 56% to 95%</li>
+                            <li>Saved 900+ labor hours annually through automation</li>
+                            <li>Led cross-functional teams using Agile/SCRUM methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Freelance Developer</h3>
+                            <span class="timeline-company">Independent</span>
+                            <span class="timeline-date">Ongoing</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developing custom ERP systems and business solutions for small to medium enterprises.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Created ERP systems for 5+ businesses</li>
+                            <li>Generated $1M+ annual revenue for clients</li>
+                            <li>Delivered end-to-end solutions from design to deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to Transform Your Data into Impact</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info-card">
+                    <h3>Get in Touch</h3>
+                    <p>I'm excited about opportunities to drive data-driven innovation and create meaningful impact. 
+                       Let's discuss how my expertise can contribute to your organization's success.</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:toghrulniyazli1@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">toghrulniyazli1@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+420774175008" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+420 774 175 008</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Prague, Czech Republic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Toghrul Niyazli. Crafted with precision and purpose.</p>
+                <p class="footer-tagline">"Transforming Data into Strategic Advantage"</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
