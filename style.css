@@ -206,6 +206,7 @@ a:hover {
     z-index: -1;
 }
 
+
 #navbar {
     position: fixed;
     top: 0;
@@ -213,8 +214,16 @@ a:hover {
     width: 100%;
     z-index: 1000;
     padding: var(--spacing-sm) 0;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    /* UPDATE THIS LINE for a slower, smoother animation */
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+#navbar.navbar--hidden {
+    transform: translateY(-100%);
+}
+
+
 
 #navbar.scrolled {
     background-color: rgba(10, 25, 47, 0.85);
