@@ -1,4 +1,4 @@
-// PORTFOLIO SCRIPT - ALL VANISHING/DISAPPEARING DISABLED
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // ===================================================================
@@ -460,12 +460,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (entry.isIntersecting) {
                     // Add animation class
                     entry.target.classList.add('animate-in');
-                    // KEEP ELEMENT VISIBLE - DO NOT UNOBSERVE
-                    // This ensures elements stay visible after animation
+
                 } else {
-                    // OPTIONAL: Keep the animate-in class even when out of view
-                    // entry.target.classList.add('animate-in');
-                }
+
+
             });
         }, { 
             threshold: 0.1, 
@@ -508,9 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
         animate();
     }
 
-    // ===================================================================
-    //  RUN APPLICATION
-    // ===================================================================
+
     init();
 
 });
